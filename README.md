@@ -10,14 +10,14 @@ This project is a fully functional e-commerce platform designed using **ReactJS*
 - **Authentication:** JWT-based authentication
 - **Containerization:** Docker
 - **Version Control:** GitHub
-- **Others:** Axios for API calls, Lombok for reducing boilerplate code
+- **Others:** Axios for API calls
 
 ## Features Implemented
 - User Authentication using JWT tokens.
 - Product listing with pagination.
 - Add-to-cart functionality.
 - Cart management (updating item quantities, removing items).
-- Order placement and history.
+- Order placement.
 - Backend APIs for managing products, orders, and users.
 
 ## Future Suggestions
@@ -25,7 +25,7 @@ This project is a fully functional e-commerce platform designed using **ReactJS*
 - Implement product search and filtering.
 - Add user reviews and ratings for products.
 - Implement multi-language support.
-- Add an admin panel for product and user management.
+- Add an admin panel for product, order and user management.
 
 ## Project Diagrams
 
