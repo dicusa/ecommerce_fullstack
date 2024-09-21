@@ -57,6 +57,7 @@ Ensure you have the following installed on your local machine:
 1. **Clone the repository**:
    Clone the repository to your local machine:
    > git clone https://github.com/dicusa/ecommerce_fullstack.git
+   > 
    > cd ecommerce_fullstack
 
 2. **Use the pre-built Docker images**:
