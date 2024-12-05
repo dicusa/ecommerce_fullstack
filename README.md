@@ -87,16 +87,16 @@ Ensure you have the following installed on your local machine:
 3. **Access the services**:
    Once the containers are up and running, you can access the application:
 
-   Frontend: Open a browser and navigate to http://localhost:3000 for the React frontend.
-   Backend: The backend API (Spring Boot) will be running at http://localhost:8080.
-   Admin Panel: The admin panel will be running at http://localhost:3001.
-   Database: The MySQL database will be accessible at localhost:3306.
+   - Frontend: Open a browser and navigate to http://localhost:3000 for the React frontend.
+   - Backend: The backend API (Spring Boot) will be running at http://localhost:8080.
+   - Admin Panel: The admin panel will be running at http://localhost:3001.
+   - Database: The MySQL database will be accessible at localhost:3306.
    Verify the database: You can connect to the MySQL database using a MySQL client like DBeaver or MySQL Workbench with the following credentials:
 
-    Host: localhost
-    Port: 3306
-    Username: root
-    Password: your_password
+       - Host: localhost
+       - Port: 3306
+       - Username: root
+       - Password: your_password
    
 4. **Stopping the Services**
    To stop the running containers, run the following command:
