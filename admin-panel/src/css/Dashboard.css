@@ -1,0 +1,27 @@
+.dashboard-container {
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+  
+  .grid-item {
+    padding: 1rem;
+    background: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: bold;
+    transition: background 0.3s;
+  }
+  
+  .grid-item:hover {
+    background: #0056b3;
+  }
+  

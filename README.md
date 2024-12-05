@@ -10,6 +10,9 @@ This project is a fully functional e-commerce platform designed using **ReactJS*
 - **Authentication:** JWT-based authentication
 - **Containerization:** Docker
 - **Version Control:** GitHub
+- **Admin Panel:** ReactJS for frontend, Kafka for message streaming
+- **Message Queue:** Kafka for handling asynchronous communication between the Admin Panel and backend services.
+- **Zookeeper:** For managing Kafka brokers.
 - **Others:** Axios for API calls
 
 ## Features Implemented
@@ -19,13 +22,29 @@ This project is a fully functional e-commerce platform designed using **ReactJS*
 - Cart management (updating item quantities, removing items).
 - Order placement.
 - Backend APIs for managing products, orders, and users.
+- Admin Panel for managing products, users, and orders.
+- Kafka integration to manage real-time updates for product data between the backend and the admin panel.
 
 ## Future Suggestions
 - Add payment gateway integration.
 - Implement product search and filtering.
 - Add user reviews and ratings for products.
 - Implement multi-language support.
-- Add an admin panel for product, order and user management.
+- Expand Kafka-based communication to handle more events.
+- Improve Admin Panel with more management features.
+
+## Admin Panel Details
+The Admin Panel is built using ReactJS and communicates with the backend using Kafka for asynchronous communication. This admin interface allows:
+
+- Adding, updating, and deleting products.
+- Managing users and orders.
+
+Kafka is used to ensure efficient communication between the frontend (Admin Panel) and backend services. Any changes made in the Admin Panel (like updating product data) are sent via Kafka messages, which the backend consumes for real-time updates.
+
+## Kafka Integration
+Kafka is integrated into the backend to handle asynchronous communication. It acts as a message broker to manage the flow of events between services. Currently, the following Kafka topics are used:
+
+- Product Updates: Messages regarding product creation or updates are sent to Kafka, and the backend consumes them for updating the database.
 
 ## Project Diagrams
 
@@ -70,6 +89,7 @@ Ensure you have the following installed on your local machine:
 
    Frontend: Open a browser and navigate to http://localhost:3000 for the React frontend.
    Backend: The backend API (Spring Boot) will be running at http://localhost:8080.
+   Admin Panel: The admin panel will be running at http://localhost:3001.
    Database: The MySQL database will be accessible at localhost:3306.
    Verify the database: You can connect to the MySQL database using a MySQL client like DBeaver or MySQL Workbench with the following credentials:
 
